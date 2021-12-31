@@ -11,7 +11,7 @@ def game():
             guess=int(input())
         if guess == num:
             print('That is correct!')
-            win=True
+            
             break
         elif guess < num:
             print('Nice Try! Im thinking higher though.')
@@ -19,7 +19,7 @@ def game():
         elif guess > num:
             print('Nice Try! Im thinking lower though.')
             print('You have',(9-i),'attempts left.')
-    if win==True:
+    if guess == num:
         print ('Good job! You discovered the answer in', (i+1), 'attempts.')
     else:
         print('Too bad. I was thinking of', num,'\n Better Luck Next Time!')
